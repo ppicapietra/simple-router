@@ -1,6 +1,6 @@
 .clasp.json
 .gitignore
-cred.json
+creds.json
 node_modules
 .clasprc.json
 .DS_Store

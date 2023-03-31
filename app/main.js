@@ -60,7 +60,7 @@ function getRouteByPath( requestPath ) {
  * Returns the route object with the specified name.
  *
  * @param {string} routeName - The name of the route to retrieve.
- * @returns {Object} The route object with the specified name.
+ * @returns {Route} The route object with the specified name.
  */
 function getRouteByName( routeName ) {
   const route = Routes_.find( r => r.name === routeName );
@@ -91,7 +91,7 @@ function getRouteByName( routeName ) {
 /**
  * Returns the URL string constructed from the route object.
  *
- * @param {Object} route - The route object.
+ * @param {Route} route - The route object.
  * @returns {string} The URL string constructed from the route object.
  */
 function getUrlFromRoute( route ) {
@@ -103,7 +103,7 @@ function getUrlFromRoute( route ) {
  * and renders the HTML result.
  *
  * @param {Route} route - The route object containing the handler function to execute and any necessary parameters.
- * @throws {Error} - If the execution of the handler function results in an error.
+ * @returns {HtmlService} The HTML output.
  */
 function renderHTML( route ) {
 
@@ -130,7 +130,6 @@ function renderHTML( route ) {
  *
  * @param {Route} route - The route object to render JSON output for.
  * @returns {ContentService} The JSON output in text format.
- * @throws {Error} If there's an error executing the route's handler function.
  */
 function renderJSON( route ) {
   let callParam = {
