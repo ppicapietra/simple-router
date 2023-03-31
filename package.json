@@ -1,0 +1,12 @@
+{
+  "name": "ppica-simple-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "scripts": {},
+  "author": "ppicapietra",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.53"
+  }
+}

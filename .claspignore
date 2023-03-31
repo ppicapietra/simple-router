@@ -1,0 +1,8 @@
+.clasp.json
+.gitignore
+cred.json
+node_modules
+.clasprc.json
+.DS_Store
+package-lock.json
+package.json
